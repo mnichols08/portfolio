@@ -25,8 +25,8 @@ function Portfolio() {
         <p>Languages:  { project.data.lang }</p>
         <p>Completed On: { project.data.completed_date }</p>
         <p>Origins:  { project.data.origin }</p>
-        <h4>Project Code: <a href={project.data.code_url} target="_blank">{project.data.code_url}</a></h4>
-        <h4>Deployed App: <a href={project.data.deploy_url} target="_blank">{project.data.deploy_url}</a></h4>
+        <h4><a href={project.data.code_url} target="_blank">Code Repository</a></h4>
+        <h4><a href={project.data.deploy_url} target="_blank">Deployed App</a></h4>
         </li>
       ))}
       <AddProject />
