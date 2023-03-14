@@ -6,6 +6,9 @@ import App from './App';
 import Welcome from './components/Welcome.component';
 import Portfolio from './components/Portfolio/Index.component';
 import AddProject from './components/Portfolio/Add.component';
+import Blog from './components/Blog/Index.component'
+import AddBlogPost from './components/Blog/Add.component'
+import BlogPost from './components/Blog/Post.component'
 import reportWebVitals from './reportWebVitals';
 
 const router = createBrowserRouter([
@@ -20,10 +23,20 @@ const router = createBrowserRouter([
   {
     path: "/portfolio",
     element: <App Element={Portfolio} />,
-    children: [
-      
-    ]
-  }])
+  },
+  {
+    path: '/blog/:id',
+    element: <App Element={BlogPost} />
+  },
+  {
+    path: '/blog/add',
+    element: <App Element={AddBlogPost} />
+  },
+  {
+    path: "/blog",
+    element: <App Element={Blog} />
+  }
+])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
