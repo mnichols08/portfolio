@@ -6,7 +6,6 @@ function Portfolio() {
  const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    close()
     const ref = collection(db, 'projects')
     onSnapshot(ref, (snapshot) => {    
       setProjects(
