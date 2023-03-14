@@ -1,7 +1,7 @@
 function Header() {
     return (
       <header>
-        <a href="/"><h1>mNiX.dev</h1></a>
+        <a href="/"><h1>mnichols08</h1></a>
         <nav>
           <ul>
             <li>
