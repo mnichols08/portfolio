@@ -14,8 +14,15 @@ const router = createBrowserRouter([
     element: <App Element={Welcome} />,
   },
   {
+    path: 'portfolio/add',
+    element: <App Element={AddProject} />
+  },
+  {
     path: "/portfolio",
     element: <App Element={Portfolio} />,
+    children: [
+      
+    ]
   }])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
