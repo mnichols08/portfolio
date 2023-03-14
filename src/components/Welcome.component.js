@@ -1,7 +1,8 @@
 function Welcome() {
     return (
-      <div>
-      <h2>Welcome</h2>
+      <div className="welcome">
+        <h1>Hi There, I am Mikey,</h1>
+        <p>a programmer.</p>
       </div>
     );
   }
