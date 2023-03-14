@@ -1,5 +1,5 @@
 import { initializeApp } from 'firebase/app';
-import { getFirestore } from 'firebase/firestore/lite';
+import { getFirestore } from 'firebase/firestore';
 
 
 const config = {
@@ -14,11 +14,5 @@ const config = {
 
   const app = initializeApp(config);
   const db = getFirestore(app);
-  const getCollection = async (db, _collection) => {
-    const array = collection(db, _collection);
-    const snapshot = await getDocs(array);
-    const list = snapshot.docs.map(doc => doc.data());
-    return list;
-  }
 
-  export const projects = getCollection(db, 'projects');
+  export { db }
