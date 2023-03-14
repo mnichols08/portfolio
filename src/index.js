@@ -6,9 +6,10 @@ import App from './App';
 import Welcome from './components/Welcome.component';
 import Portfolio from './components/Portfolio/Index.component';
 import AddProject from './components/Portfolio/Add.component';
-import Blog from './components/Blog/Index.component'
-import AddBlogPost from './components/Blog/Add.component'
-import BlogPost from './components/Blog/Post.component'
+import ViewProject from './components/Portfolio/View.component';
+import Blog from './components/Blog/Index.component';
+import AddBlogPost from './components/Blog/Add.component';
+import BlogPost from './components/Blog/View.component';
 import reportWebVitals from './reportWebVitals';
 
 const router = createBrowserRouter([
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: 'portfolio/add',
     element: <App Element={AddProject} />
+  },
+  {
+    path: 'portfolio/:id',
+    element: <App Element={ViewProject} />
   },
   {
     path: "/portfolio",
