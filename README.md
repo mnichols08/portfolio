@@ -1,6 +1,5 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# My portfolio app
+The purpose of this app is to collect and display portfolio projects.
 
 ## Available Scripts
 
