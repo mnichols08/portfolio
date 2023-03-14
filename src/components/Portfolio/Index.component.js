@@ -20,13 +20,9 @@ function Portfolio() {
       <u>Projects: </u>
       {projects.map(project => (
         <li key={project.id}>
-        <h3>{project.data.title}</h3>
+        <h3><a href={`/portfolio/${project.id}`}>{project.data.title}</a></h3>
         <p>{project.data.desc}</p>
         <p>Languages:  { project.data.lang }</p>
-        <p>Completed On: { project.data.completed_date }</p>
-        <p>Origins:  { project.data.origin }</p>
-        <h4><a href={project.data.code_url} target="_blank">Code Repository</a></h4>
-        <h4><a href={project.data.deploy_url} target="_blank">Deployed App</a></h4>
         </li>
       ))}
       </ul>
