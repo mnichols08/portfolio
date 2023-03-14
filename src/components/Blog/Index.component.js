@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { collection, query, onSnapshot } from "firebase/firestore";
+import { collection, onSnapshot } from "firebase/firestore";
 import { db } from '../../firebase/firebase.utils';
 
 function Blog() {
@@ -16,15 +16,17 @@ function Blog() {
     });
   }, [ ]);
     return (
+      <section>
+      <h1><u>Blog: </u></h1>
+      <a href="/blog/add">Add Post</a>
       <ul>
-      <u>Projects: </u>
       {blog.map(post => (
         <li key={post.id}>
         <h3><a href={`/blog/${post.id}`}>{post.data.title}</a></h3>
-        <h3>{post.data.created}</h3>
         </li>
       ))}
       </ul>
+      </section>
     );
   }
   
