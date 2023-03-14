@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { collection, query, onSnapshot } from "firebase/firestore";
 import { db } from '../../firebase/firebase.utils';
-import AddProject from './Add.component';
+
 function Portfolio() {
  const [projects, setProjects] = useState([]);
   useEffect(() => {
@@ -29,7 +29,6 @@ function Portfolio() {
         <h4><a href={project.data.deploy_url} target="_blank">Deployed App</a></h4>
         </li>
       ))}
-      <AddProject />
       </ul>
     );
   }
