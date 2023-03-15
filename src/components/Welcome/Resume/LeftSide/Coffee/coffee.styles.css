@@ -7,3 +7,20 @@
 .coffee p {
     text-align: center;
 }
+
+.coffee a.button {
+    text-decoration: none;
+    background: #ffffff6f;
+    border: 1px solid #000;
+    border-radius: 3pt;
+    padding: 1rem;
+    transition: all 0.2s;
+  }
+  .coffee a.button:hover {
+    background: #eee;
+    color: #333;
+    text-decoration: wavy underline green;
+  }
+  .coffee a.button:active {
+    transform: translateY(2px);
+  }
