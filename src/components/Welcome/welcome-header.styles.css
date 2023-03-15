@@ -24,8 +24,8 @@
     margin-top: -5%;
   }
   .welcome-header h2 {
-    position: absolute;
-    bottom: 0;
+    position: relative;
+    top: 20%;
     left: 0;
     width: 100%;
     background: #eee;
