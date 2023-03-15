@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'Fira Sans Extra Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Fira Sans Extra Condensed Regular'), local('FiraSansExtraCondensed-Regular'), url(https://fonts.gstatic.com/s/firasansextracondensed/v4/NaPKcYDaAO5dirw6IaFn7lPJFqXmS-M9Atn3wgda1f-uvw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Major Mono Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Major Mono Display Regular'), local('MajorMonoDisplay-Regular'), url(https://fonts.gstatic.com/s/majormonodisplay/v3/RWmVoLyb5fEqtsfBX9PDZIGr2tFubRh7DXeU.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Seymour One'), local('SeymourOne'), url(https://fonts.gstatic.com/s/seymourone/v7/4iCp6Khla9xbjQpoWGGd0lyPN4Q.ttf) format('truetype');
+}
+
+  div.welcome-header {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .welcome-header h1{
+    font-family: "Major Mono Display", monospace;
+    font-size: 13vw;
+    transition: 1.5s all;
+    background: url(https://github.com/mnichols08/LambdaSchool-Preprocessing1/blob/master/img/code.jpg?raw=true);
+    text-transform: uppercase;
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: none;
+    background-size: cover;
+    font-weight: 800;
+    -webkit-background-clip: text;
+    background-clip: text;
+    display: inline-block;
+    color: transparent;
+    filter: drop-shadow(0px 0px 3px #fff);
+    margin-top: -5%;
+  }
+  .welcome-header h2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #eee;
+    color: #333;
+    text-transform: uppercase;
+    box-shadow: 0 3px 3px rgba(46, 0, 121, 0.3);
+    transition: 1.5s all;
+  }
