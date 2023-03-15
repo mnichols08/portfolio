@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import './reset.styles.css'
+import './typography.css';
 import './index.css';
 import App from './App';
 import Welcome from './components/Welcome/Index.component';
