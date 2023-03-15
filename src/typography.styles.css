@@ -1,0 +1,93 @@
+
+@font-face {
+    font-family: 'Fira Sans Extra Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Fira Sans Extra Condensed Regular'), local('FiraSansExtraCondensed-Regular'), url(https://fonts.gstatic.com/s/firasansextracondensed/v4/NaPKcYDaAO5dirw6IaFn7lPJFqXmS-M9Atn3wgda1f-uvw.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Major Mono Display';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Major Mono Display Regular'), local('MajorMonoDisplay-Regular'), url(https://fonts.gstatic.com/s/majormonodisplay/v3/RWmVoLyb5fEqtsfBX9PDZIGr2tFubRh7DXeU.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Roboto Mono'), local('RobotoMono-Regular'), url(https://fonts.gstatic.com/s/robotomono/v6/L0x5DF4xlVMF-BfR8bXMIjhLq3o.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Seymour One'), local('SeymourOne'), url(https://fonts.gstatic.com/s/seymourone/v7/4iCp6Khla9xbjQpoWGGd0lyPN4Q.ttf) format('truetype');
+  }
+  html {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 62.5%;
+    color: #aaa;
+  }
+  a {
+    color: #ccc;
+    transition: all 0.2s;
+  }
+  a:hover {
+    color: green;
+  }
+  @media only screen {
+    svg {
+      filter: invert(1);
+    }
+  }
+  body {
+    font-size: 1.6rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    padding: 1rem 0;
+    letter-spacing: 3px;
+  }
+  h1 {
+    font-family: "Major Mono Display", monospace;
+  }
+  h3,
+  h5 {
+    font-family: 'Roboto Mono', monospace;
+  }
+  h1,
+  h3 {
+    color: #eee;
+  }
+  h1 {
+    font-size: 13vw;
+    transition: 1.5s all;
+  }
+  h2 {
+    font-size: 3rem;
+    font-weight: 200;
+  }
+  h3 {
+    font-size: 2.5rem;
+    font-weight: 300;
+  }
+  h4 {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  h5 {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+  h6 {
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
