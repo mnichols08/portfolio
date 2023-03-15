@@ -6,7 +6,7 @@ function Skillset(){
               <hr />
               <h3>My Skillset Includes</h3>
                 <ul>
-                  {skillset.map(skill => <li>{skill}</li>)}
+                  {skillset.map((skill, i) => <li key={i}>{skill}</li>)}
                 </ul>     
           </section>  
     )
