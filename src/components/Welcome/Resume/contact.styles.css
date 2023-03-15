@@ -1,0 +1,7 @@
+.contact {
+    text-align: right;
+}
+phone,
+email {
+  display: block;
+}
