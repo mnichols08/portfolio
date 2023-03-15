@@ -1,4 +1,4 @@
-import './header.styles.css'
+import './welcome-header.styles.css'
 function WelcomeHeader() {
     return (
 
