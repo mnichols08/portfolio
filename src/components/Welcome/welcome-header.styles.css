@@ -1,26 +1,3 @@
-@font-face {
-  font-family: 'Fira Sans Extra Condensed';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Fira Sans Extra Condensed Regular'), local('FiraSansExtraCondensed-Regular'), url(https://fonts.gstatic.com/s/firasansextracondensed/v4/NaPKcYDaAO5dirw6IaFn7lPJFqXmS-M9Atn3wgda1f-uvw.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Major Mono Display';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Major Mono Display Regular'), local('MajorMonoDisplay-Regular'), url(https://fonts.gstatic.com/s/majormonodisplay/v3/RWmVoLyb5fEqtsfBX9PDZIGr2tFubRh7DXeU.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Seymour One';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Seymour One'), local('SeymourOne'), url(https://fonts.gstatic.com/s/seymourone/v7/4iCp6Khla9xbjQpoWGGd0lyPN4Q.ttf) format('truetype');
-}
-
   div.welcome-header {
     text-align: center;
     height: 100vh;

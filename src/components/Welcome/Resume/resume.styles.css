@@ -1,11 +1,11 @@
-main.resume {
+.resume {
     display: flex;
     margin: auto;
     width: 75%;
 }
 
 @media only screen and (max-width: 460px) {
-    .main.resume {
+    .resume {
       width: 100%;
     }
   }

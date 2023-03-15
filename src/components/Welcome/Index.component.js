@@ -1,5 +1,5 @@
 import WelcomeHeader from './WelcomeHeader.component';
-import Resume from './Resume.component';
+import Resume from './Resume/Resume.component';
 
 function Welcome() {
     return (
