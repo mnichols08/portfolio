@@ -50,11 +50,11 @@ const router = createBrowserRouter([
     element: <App Element={UnderConstruction} />
   },
   {
-    path: "gallery",
+    path: "/gallery",
     element:  <App Element={UnderConstruction} />
   },
   {
-    path: "photos",
+    path: "/contact",
     element:  <App Element={UnderConstruction} />
   }
 ])
