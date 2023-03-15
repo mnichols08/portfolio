@@ -5,6 +5,7 @@ import './reset.styles.css'
 import './typography.styles.css';
 import './index.styles.css';
 import App from './App';
+import UnderConstruction from './components/UnderConstruction/UnderConstruction.component';
 import Welcome from './components/Welcome/Index.component';
 import Portfolio from './components/Portfolio/Index.component';
 import AddProject from './components/Portfolio/Add.component';
@@ -42,6 +43,14 @@ const router = createBrowserRouter([
   {
     path: "/blog",
     element: <App Element={Blog} />
+  },
+  {
+    path: "gallery",
+    element:  <App Element={UnderConstruction} />
+  },
+  {
+    path: "photos",
+    element:  <App Element={UnderConstruction} />
   }
 ])
 
