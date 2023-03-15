@@ -7,6 +7,7 @@ import './index.styles.css';
 import App from './App';
 import UnderConstruction from './components/UnderConstruction/UnderConstruction.component';
 import Welcome from './components/Welcome/Index.component';
+import Resume from './components/Resume/Resume.component';
 import Portfolio from './components/Portfolio/Index.component';
 import AddProject from './components/Portfolio/Add.component';
 import ViewProject from './components/Portfolio/View.component';
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App Element={Welcome} />,
+  },
+  {
+    path: "/resume",
+    element: <App Element={Resume} />,
   },
   {
     path: 'portfolio/add',
