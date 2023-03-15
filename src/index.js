@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import './index.css';
 import App from './App';
-import Welcome from './components/Welcome.component';
+import Welcome from './components/Welcome/Index.component';
 import Portfolio from './components/Portfolio/Index.component';
 import AddProject from './components/Portfolio/Add.component';
 import ViewProject from './components/Portfolio/View.component';
