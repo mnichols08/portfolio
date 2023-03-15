@@ -47,7 +47,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/blog",
-    element: <App Element={Blog} />
+    element: <App Element={UnderConstruction} />
   },
   {
     path: "gallery",
