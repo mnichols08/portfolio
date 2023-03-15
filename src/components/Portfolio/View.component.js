@@ -4,8 +4,6 @@ import { useState, useEffect } from "react";
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "../../firebase/firebase.utils";
 
-
-
 function ViewProject() {
   const { id } = useParams();
   const [project, setProject] = useState([]);
