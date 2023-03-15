@@ -1,0 +1,9 @@
+.education ul > div:nth-of-type(2){
+    text-align: right;
+}
+
+.education ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
