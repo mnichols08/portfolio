@@ -7,3 +7,9 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
+@media only screen and (max-width: 900px) {
+    .history ul.job {
+      flex-direction: column;
+    }
+}

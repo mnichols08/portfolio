@@ -5,6 +5,12 @@
     margin-top: 5em;
 }
 
+@media only screen and (max-width: 900px) {
+  .resume{
+    flex-direction: column;
+  }
+}
+
 @media only screen and (max-width: 460px) {
     .resume {
       width: 100%;
