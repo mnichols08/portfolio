@@ -1,0 +1,9 @@
+.extras ul > div:nth-of-type(2){
+    text-align: right;
+}
+
+.extras ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
