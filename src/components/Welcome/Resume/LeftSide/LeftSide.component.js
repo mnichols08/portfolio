@@ -1,9 +1,9 @@
-import Contact from './Contact.component';
-import Skillset from './Skillset.component';
-import Coffee from './Coffee.component';
-import Projects from './Projects.component';
-import AddtlInfo from './AddtlInfo.component';
-import Certs from './Certs.component';
+import Contact from './Contact/Contact.component';
+import Skillset from './Skillset/Skillset.component';
+import Coffee from './Coffee/Coffee.component';
+import Projects from './Projects/Projects.component';
+import AddtlInfo from './AddtlInfo/AddtlInfo.component';
+import Certs from './Certs/Certs.component';
 import './left-side.styles.css';
 function LeftSide(){
     return(

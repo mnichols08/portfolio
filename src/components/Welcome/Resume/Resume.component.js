@@ -1,12 +1,12 @@
-import LeftSide from './LeftSide.component';
-import RightSide from './RightSide.component';
+import LeftSide from './LeftSide/LeftSide.component';
+import RightSide from './RightSide/RightSide.component';
 import './resume.styles.css'
 function Resume() {
     return (
-        <main className="resume">
+        <div className="resume">
         <LeftSide />
         <RightSide />
-    </main>
+    </div>
     );
   }
   
