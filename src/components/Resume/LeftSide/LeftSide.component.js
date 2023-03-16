@@ -12,8 +12,8 @@ function LeftSide({resume}){
             <Contact telephone={resume.phone} email={resume.email} address={resume.address}/>
             <Coffee caption={resume.caption} email={resume.email}/>
             <Skillset skillset={resume.skillset}/>
-            <Projects />     
-            <AddtlInfo />
+            <Projects featured={resume.featured_projects}/>     
+            <AddtlInfo languages={resume.languages}/>
             <Certs /> 
         </div>
     )
