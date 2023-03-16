@@ -1,0 +1,13 @@
+.portfolio {
+    margin: 3em;
+}
+
+.portfolio ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.portfolio ul > li {
+    width: 50%;
+}
