@@ -24,6 +24,7 @@ function Projects(){
                     <h4><a href={`/portfolio/${project.id}`}>{ project.data.title }</a></h4>
                     <ul>
                         <li>{ project.data.desc }</li>
+                        <li>Languages Used: { project.data.lang}</li>
                         <li>Completed on: { project.data.completed_date}</li>
                     </ul>
                 </li>
