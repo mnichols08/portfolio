@@ -1,6 +1,7 @@
-import {useState} from 'react'
-import {db} from '../../firebase/firebase.utils'
-import {collection, addDoc, Timestamp} from 'firebase/firestore'
+import {useState} from 'react';
+import {db} from '../../firebase/firebase.utils';
+import {collection, addDoc, Timestamp} from 'firebase/firestore';
+import './add.styles.css';
 
 function AddProject() {
 
@@ -23,6 +24,14 @@ function AddProject() {
         deploy_url: deployUrl,
         code_url: codeUrl,
         created: Timestamp.now()
+      }).then(() => {
+        setTitle('');
+        setDesc('');
+        setOrigin('');
+        setLang('');
+        setCompletedDate('');
+        setDeployUrl('');
+        setCodeUrl('');
       })
     } catch (err) {
       alert(err)
