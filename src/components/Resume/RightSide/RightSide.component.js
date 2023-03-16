@@ -2,10 +2,11 @@ import SummaryOfSkills from './SummaryOfSkills/SummaryOfSkills.component';
 import EmploymentHistory from './EmploymentHistory/EmploymentHistory.component';
 import Education from './Education/Education.component';
 import Extracurricular from './Extracurricular/Extracurricular.component';
-function RightSide() {
+function RightSide({resume}) {
     return(
         <div>
-          <SummaryOfSkills />
+          <hr />
+          <SummaryOfSkills sumOfSkills={resume.summary_of_skills}/>
           <hr />
           <EmploymentHistory />
           <hr />
