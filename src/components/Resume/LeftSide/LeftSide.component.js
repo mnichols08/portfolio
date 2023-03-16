@@ -14,7 +14,7 @@ function LeftSide({resume}){
             <Skillset skillset={resume.skillset}/>
             <Projects featured={resume.featured_projects}/>     
             <AddtlInfo languages={resume.languages}/>
-            <Certs /> 
+            <Certs certs={resume.certifications}/> 
         </div>
     )
 }
