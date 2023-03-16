@@ -8,7 +8,7 @@ function RightSide({resume}) {
           <hr />
           <SummaryOfSkills sumOfSkills={resume.summary_of_skills}/>
           <hr />
-          <EmploymentHistory />
+          <EmploymentHistory employmentHistory={resume.employment_history} />
           <hr />
           <Education />
           <hr />
