@@ -1,9 +1,12 @@
 import './addtl-info.styles.css';
-function AddtlInfo(){
+function AddtlInfo({languages}){
+    let langs
+    languages ? langs = languages.sort((a,b) => b.length - a.length) : langs = [];
+
     return(
         <ul className="addtl-info">
             <h3>Additional Information</h3>
-            <li>Languages: English, Spanish, Thai</li>
+            <li>Languages: {langs.map((language, i) => `${language}, `)}</li>
             <hr />
         </ul> 
     )
