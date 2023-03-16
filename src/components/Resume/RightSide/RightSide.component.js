@@ -12,7 +12,7 @@ function RightSide({resume}) {
           <hr />
           <Education education={resume.Education}/>
           <hr />
-          <Extracurricular />
+          <Extracurricular extra={resume.Extracurricular}/>
         </div>
     );
 }
