@@ -10,7 +10,7 @@ function RightSide({resume}) {
           <hr />
           <EmploymentHistory employmentHistory={resume.employment_history} />
           <hr />
-          <Education />
+          <Education education={resume.Education}/>
           <hr />
           <Extracurricular />
         </div>
