@@ -1,7 +1,13 @@
 import './contact.styles.css';
 function Contact({telephone, email, address}){
+    let phone;
+    try {
     const telStr = telephone.toString()
-    const phone = `${telStr.slice(0,3)} ${telStr.slice(3,6)} ${telStr.slice(6,10)}`
+    phone = `${telStr.slice(0,3)} ${telStr.slice(3,6)} ${telStr.slice(6,10)}`
+    }
+    catch {
+        phone = '240 675 2429'
+    }
     return(
         <div className="contact" id="contact">
             <p>
