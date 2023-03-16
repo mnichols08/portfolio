@@ -1,8 +1,8 @@
 import { useParams } from "react-router-dom";
-
 import { useState, useEffect } from "react";
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "../../firebase/firebase.utils";
+import './view.styles.css';
 
 function ViewProject() {
   const { id } = useParams();
@@ -12,7 +12,7 @@ function ViewProject() {
     getDocSnap()
   }, []);
   return (
-    <section>
+    <section className="view-project">
             <h3>{ project.title }</h3>
             <p>{ project.desc }</p>
             <p>Languages:  { project.lang }</p>
