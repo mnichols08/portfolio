@@ -5,13 +5,13 @@ import Projects from './Projects/Projects.component';
 import AddtlInfo from './AddtlInfo/AddtlInfo.component';
 import Certs from './Certs/Certs.component';
 import './left-side.styles.css';
-function LeftSide(){
+function LeftSide({resume}){
     return(
         <div className="left-side">
             <img src="img/flicker.jpg" alt="Mikey taking a photograph." className="snapshot" />
             <Contact />
             <Coffee email='mnix@journeytocode.io'/>
-            <Skillset />
+            <Skillset skillset={resume.skillset}/>
             <Projects />     
             <AddtlInfo />
             <Certs /> 
