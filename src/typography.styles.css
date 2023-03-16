@@ -33,11 +33,11 @@
     color: #aaa;
   }
   a {
-    color: #ccc;
+    color: #eccffa;
     transition: all 0.2s;
   }
   a:hover {
-    color: green;
+    color: #683066;
   }
   @media only screen {
     svg {
@@ -65,7 +65,7 @@
   }
   h1,
   h3 {
-    color: #eee;
+    color: #6054a5;
   }
   h1 {
     font-size: 13vw;
