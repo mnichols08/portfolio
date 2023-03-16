@@ -9,7 +9,7 @@ function LeftSide({resume}){
     return(
         <div className="left-side">
             <img src="img/flicker.jpg" alt="Mikey taking a photograph." className="snapshot" />
-            <Contact />
+            <Contact telephone={resume.phone} email={resume.email} address={resume.address}/>
             <Coffee email='mnix@journeytocode.io'/>
             <Skillset skillset={resume.skillset}/>
             <Projects />     
