@@ -1,16 +1,14 @@
 import './certs.styles.css';
-function Certs() {
+function Certs({certs}) {
+  let certsArr
+  certs ? certsArr = certs.sort((a,b) => b.length - a.length) : certsArr = [];
+
     return (
         <ul className="certs">
         <h3>Certifications</h3>
-        <li>Google Analytics</li>
-        <li>Google Ads</li>
-        <li>BigCommerce Partnership</li>
-        <li>Mountain Bike Guiding</li>
-        <li>PSIA - Cross Country Skiing</li>
-        <li>AASI - Snowboarding</li>
-        <li>Swift Water Rescue</li>
-        <li>First Aid / CPR</li>
+        {certsArr.map(cert => (
+          <li key={cert}>{cert}</li>
+        ))}
       </ul>
     )
 }
