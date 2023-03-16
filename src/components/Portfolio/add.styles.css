@@ -1,0 +1,12 @@
+form.addItem {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+}
+
+form.addItem > input, form.addItem > textarea {
+    padding:1em;
+}
