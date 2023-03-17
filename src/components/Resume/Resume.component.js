@@ -6,7 +6,7 @@ import RightSide from './RightSide/RightSide.component';
 import './resume.styles.css'
 function Resume() {
     const [resume, setResume] = useState([]);
-    const getDocSnap = async () => await getDoc(doc(db, "resume", 'resume')).then(doc => setResume(doc.data()))
+    const getDocSnap = async () => await getDoc(doc(db, "pages", 'resume')).then(doc => setResume(doc.data()))
     useEffect(() => {
       getDocSnap()
       }, []);
