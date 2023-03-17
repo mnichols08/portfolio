@@ -16,7 +16,10 @@ function EmploymentHistory({employmentHistory}){
                 <h4>{job.dates}</h4>
                 <h5>{job.location}</h5>
               </div>
-              <p>{job.desc}</p>
+              <ul>
+                {job.desc.map((jobDuty, o) => (<li key={`duty_${o}`}>{jobDuty}</li>))}
+              </ul>
+              
             </ul>
           ))}
 
