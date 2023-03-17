@@ -6,13 +6,13 @@ function RightSide({resume}) {
     return(
         <div>
           <hr />
-          <SummaryOfSkills sumOfSkills={resume.summary_of_skills}/>
+          <SummaryOfSkills sumOfSkills={resume.skills}/>
           <hr />
-          <EmploymentHistory employmentHistory={resume.employment_history} />
+          <EmploymentHistory employmentHistory={resume.employment} />
           <hr />
-          <Education education={resume.Education}/>
+          <Education education={resume.education}/>
           <hr />
-          <Extracurricular extra={resume.Extracurricular}/>
+          <Extracurricular extra={resume.extracurricular}/>
         </div>
     );
 }

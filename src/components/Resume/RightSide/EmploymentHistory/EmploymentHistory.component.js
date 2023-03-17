@@ -9,7 +9,7 @@ function EmploymentHistory({employmentHistory}){
           {history.map((job,i) => (
             <ul className="job" key={`job_${i}`}>
               <div>
-                <h4>{job.job_title}</h4>
+                <h4>{job.title}</h4>
                 <h5>{job.employer}</h5>
               </div>
               <div>
@@ -17,7 +17,7 @@ function EmploymentHistory({employmentHistory}){
                 <h5>{job.location}</h5>
               </div>
               <ul>
-                {job.desc.map((jobDuty, o) => (<li key={`duty_${o}`}>{jobDuty}</li>))}
+                {job.tasks.map((jobDuty, o) => (<li key={`duty_${o}`}>{jobDuty}</li>))}
               </ul>
               
             </ul>
