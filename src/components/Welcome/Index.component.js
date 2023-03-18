@@ -1,14 +1,9 @@
 import WelcomeHeader from './WelcomeHeader.component';
-
 function Welcome() {
     return (
-
  <div>
-  <WelcomeHeader />
+    {<WelcomeHeader/>}
  </div>
-  
-
     );
   }
-  
   export default Welcome;
