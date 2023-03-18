@@ -1,6 +1,6 @@
 import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
-
+import { getAuth, GoogleAuthProvider, signInAnonymously, signInWithPopup } from 'firebase/auth';
 
 const config = {
     apiKey: "AIzaSyC2UYAuLIAIFzF5mH17r_gxU0-LqK2T9p8",
@@ -14,5 +14,26 @@ const config = {
 
   const app = initializeApp(config);
   const db = getFirestore(app);
+  const provider = new GoogleAuthProvider();
+  const auth = getAuth();
 
-  export { db }
+  auth.languageCode = 'it';
+  provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
+  provider.setCustomParameters({
+    'login_hint': 'user@example.com',
+    prompt: 'select_account'
+  });
+
+const createGoogleUserProfileDocument = async () => signInWithPopup(auth,provider).then((result) => {
+  const credential = GoogleAuthProvider.credentialFromResult(result);
+  const token = credential.accessToken;
+  const user = result.user;
+  return user
+}).catch((error) => {
+  const errorCode = error.code;
+  const errorMessage = error.message;
+  const email = error.customData.email;
+  const credential = GoogleAuthProvider.credentialFromError(error);
+});
+
+export { db, createGoogleUserProfileDocument, auth }
