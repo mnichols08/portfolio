@@ -1,5 +1,6 @@
 import {auth} from '../../firebase/firebase.utils';
 function Edit(handleClick){
+    handleClick ? handleClick = handleClick : console.log('you better add an event handler dummy!')
     let admin;
     try {
       let user = auth.currentUser;
@@ -9,7 +10,7 @@ function Edit(handleClick){
       admin = false;
     }
     return(
-        admin ? <a onClick={handleClick}>/</a> : ''
+        admin ? <a href={handleClick}>/</a>  : ''
     )
 }
 export default Edit
