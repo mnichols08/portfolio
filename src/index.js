@@ -7,6 +7,7 @@ import './index.styles.css';
 import App from './App';
 import UnderConstruction from './components/UnderConstruction/UnderConstruction.component';
 import Welcome from './components/Welcome/Index.component';
+import Login from './components/Login/Login.component';
 import Resume from './components/Resume/Resume.component';
 import Portfolio from './components/Portfolio/Index.component';
 import AddProject from './components/Portfolio/Add.component';
@@ -20,6 +21,9 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App Element={Welcome} />,
+  },
+  { path: '/login',
+    element: <App Element={Login} />
   },
   {
     path: "/resume",
