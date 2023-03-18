@@ -1,11 +1,11 @@
+import Edit from '../../../Edit/Edit.component';
 import './employment-history.styles.css';
 function EmploymentHistory({employmentHistory}){
   let history
   employmentHistory ? history = employmentHistory : history = [];
-  console.log(employmentHistory)
     return(
         <section className="history" id="history">
-          <h3>Employment History</h3>
+          <h3>Employment History <Edit /></h3>
           {history.map((job,i) => (
             <ul className="job" key={`job_${i}`}>
               <div>

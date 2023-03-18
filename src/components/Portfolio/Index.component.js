@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { collection, onSnapshot } from "firebase/firestore";
 import { db } from '../../firebase/firebase.utils';
+import Edit from '../Edit/Edit.component';
 import './index.styles.css'
 
 function Portfolio() {
@@ -24,9 +25,9 @@ function Portfolio() {
         {projects.map(project => {
           return (
             <li key={project.id}>
-            <h3><a href={`/portfolio/${project.id}`}>{project.data.title} </a> </h3>
-            <p>{project.data.desc}</p>
-            <p>Languages:  { project.data.lang }</p>
+            <h3><a href={`/portfolio/${project.id}`}>{project.data.title}</a> <Edit /></h3>
+            <p>{project.data.desc} <Edit /></p>
+            <p>Languages:  { project.data.lang } <Edit /></p>
             </li>
           )
         })}

@@ -1,10 +1,11 @@
+import Edit from '../../../Edit/Edit.component';
 import './extracurricular.styles.css'
 function Extracurricular({extra}){
   let extras
   extra ? extras = extra : extras = [];
     return(
         <section className="extras" id="extras">
-              <h3>Extracurricular</h3>
+              <h3>Extracurricular <Edit /></h3>
               { extras.map((activity, i) => (
                 <ul key={`activity_${i}`}>
                 <div>

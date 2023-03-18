@@ -1,3 +1,4 @@
+import Edit from '../../../Edit/Edit.component';
 import './addtl-info.styles.css';
 function AddtlInfo({languages}){
     let langs
@@ -5,7 +6,7 @@ function AddtlInfo({languages}){
 
     return(
         <ul className="addtl-info">
-            <h3>Additional Information</h3>
+            <h3>Additional Information <Edit /></h3>
             <li>Languages: {langs.map((language, i) => `${language}, `)}</li>
             <hr />
         </ul> 

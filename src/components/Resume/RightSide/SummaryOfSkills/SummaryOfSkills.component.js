@@ -1,10 +1,11 @@
+import Edit from '../../../Edit/Edit.component';
 import './summary-of-skills.styles.css';
 function SummaryOfSkills({sumOfSkills}){
     let skills
     sumOfSkills ? skills = sumOfSkills : skills = [];
     return (
         <section className="intro" id="intro">
-            <h3>Summary of Skills</h3>
+            <h3>Summary of Skills <Edit /></h3>
             {
                 Object.keys(skills).map((skill,y) => (
                     <ul key={`skill_${y}`}>

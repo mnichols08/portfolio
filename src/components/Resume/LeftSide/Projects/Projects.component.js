@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { collection, onSnapshot, query, orderBy, limit } from "firebase/firestore";
 import { db } from '../../../../firebase/firebase.utils';
+import Edit from '../../../Edit/Edit.component';
 import './projects.styles.css';
 function Projects(){
     const [projects, setProjects] = useState([]);
@@ -17,7 +18,7 @@ function Projects(){
     }, [ ]);
     return(
         <ul>
-            <h3>Recent Projects</h3>
+            <h3>Recent Projects <Edit /></h3>
             <hr />
             {projects.map((project, i) => (
                 <li key={i}>
