@@ -6,7 +6,7 @@ function Edit(handleClick){
       let user = auth.currentUser;
       admin = user.uid === `Mdu1H6ns4neFWEHMxLzQtwX6CTp2`;
     } catch (e) {
-      console.error(e);
+      //console.error(e);
       admin = false;
     }
     return(
