@@ -5,12 +5,12 @@ import Projects from './Projects/Projects.component';
 import AddtlInfo from './AddtlInfo/AddtlInfo.component';
 import Certs from './Certs/Certs.component';
 import './left-side.styles.css';
-function LeftSide({resume}){
+function LeftSide({resume, github}){
     return(
         <div className="left-side">
-            <img src="img/flicker.jpg" alt="Mikey taking a photograph." className="snapshot" />
-            <Contact telephone={resume.phone} email={resume.email} address={resume.address}/>
-            <Coffee caption={resume.caption} email={resume.email} message={resume.message}/>
+            <img src={github.avatar_url} alt={`${github.login}'s avatar on github`} className="snapshot" />
+            <Contact telephone={resume.phone} email={github.email || resume.email} address={github.location}/>
+            <Coffee caption={github.bio} email={resume.email} message={resume.message}/>
             <Skillset skillset={resume.skillset}/>
             <Projects featured={resume.featured}/>     
             <AddtlInfo languages={resume.languages}/>
