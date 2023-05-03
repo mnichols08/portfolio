@@ -14,7 +14,7 @@ function ViewProject() {
   }, []);
   return (
     <section className="view-project">
-            <h3>{ project.title } <Edit /></h3>
+            <h3>{ project.title } <Edit value={project} /></h3>
             <p>{ project.desc }<Edit /></p>
             <p>Languages:  { project.lang }<Edit /></p>
             <p>Completed On: { project.completed_date }<Edit /></p>
